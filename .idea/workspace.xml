@@ -97,7 +97,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Sigh-master" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
   </component>
   <component name="RunDashboard">
@@ -139,12 +139,12 @@
       <workItem from="1509804787277" duration="596000" />
       <workItem from="1509878693649" duration="13383000" />
       <workItem from="1509976677704" duration="15796000" />
-      <workItem from="1510000814762" duration="6000" />
+      <workItem from="1510000814762" duration="204000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68541000" />
+    <option name="totallyTimeSpent" value="68739000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="581" y="59" width="861" height="765" extended-state="0" />
