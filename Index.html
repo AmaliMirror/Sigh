@@ -7,82 +7,121 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
+
 <header>
     <section>
         <nav>
-            <ul class="">
-                <li class=""><a><img src="img/MAGNO -2.png"></a></li>
-                <li><a href="tel:+79000000000" class="">+7 900 000 00 00</a></li>
-                <li><form><input type="search" value="Поиск по сайту"></form></li>
-                <li><a href="#" class="">Личный кабинет</a></li>
-                <li><a href="#" class="">Корзина</a></li>
-            </ul>
-            <ul class="">
-                <li class=""><a href="#">Все категории</a>
-                    <ul>
-                        <li><a href="#">Роутеры</a></li>
-                        <li><a href="#">Игровые симуляторы</a></li>
-                        <li><a href="#">Комплектующие</a></li>
-                        <li><a href="#">Периферия</a></li>
-                        <li><a href="#">Настольные лампы</a></li>
-                        <li><a href="#">Моноблоки и ноутбуки</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Гарантии</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
+            <div class="MainMenuCase">
+                <ul class="MainMenu">
+                    <li class="logo">
+                        <a><img src="img/MAGNO -2.png"></a>
+                    </li>
+                    <li><a href="#" class="phone"><img src="img/tel.png"><strong> +7 900 000 00 00</strong></a></li>
+                    <li><form><input class="search" type="search" id="search" placeholder="Поиск по сайту"><label for="search"></label></form></li>
+                    <li><a href="#" class="user"><img src="img/account.png"> Личный кабинет</a></li>
+                        <!--<div class="user_window">
+                            <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+                            <form>
+                                <p>ВВЕВИДЕ ПОЖАЛУЙСТА СВОЙ ЛОГИН И ПАРОЛЬ</p>
+                                <p><input type="text" id="login" placeholder="ЛОГИН"><label for="login"></label><br>
+                                <input type="text" id="password" placeholder="ПАРОЛЬ"><label for="password"></label></p>
+                                <ul class="office">
+                                    <li><input type="radio"> ЗАПОМНИ МЕНЯ</li>
+                                    <li><a href="#"><u>Я ЗАБЫЛ ПАРОЛЬ!</u></a></li>
+                                </ul>
+                                <div class="Entry">ВОЙТИ</div>
+                            </form>
+                        </div>-->
+                    <li><a href="#" class="basket"><img src="img/basket.png"> Корзина</a></li>
+                </ul>
+            </div>
+            <div class="MinorMenuCase">
+                <ul class="MinorMenu">
+                    <li class="all_categories"><a href="#">ВСЕ КАТЕГОРИИ <img src="img/plus.png"></a>
+                        <!--<ul>
+                            <li><a href="#">Роутеры</a></li>
+                            <li><a href="#">Игровые симуляторы</a></li>
+                            <li><a href="#">Комплектующие</a></li>
+                            <li><a href="#">Периферия</a></li>
+                            <li><a href="#">Настольные лампы</a></li>
+                            <li><a href="#">Моноблоки и ноутбуки</a></li>
+                        </ul>-->
+                    </li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Гарантии</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
         </nav>
     </section>
 </header>
 
 <main>
     <section class="all_sliders">
-        <div class="slider1">
-            <pre>
-            <h1><span class="white_title">НОУТБУКИ </span>ДЛЯ ОФИСА И ДОМА</h1>
-
-            <span class="other_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-            diem nonummy nibh euismod tincidunt ut lacreet dolore magna </span>
-            <img class="laptope" src="img/HP-659499414-c04793291-zoom.png">
-            </pre>
+        <div class="sliders">
+            <div class="levers">
+                <div><label for="slide1"></label></div>div>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+            </div>
+            <div class="slider_1">
+                <input id="slide1" type="radio" name="slider">
+                 <div class="inside_slider">
+                     <h1><b> <span class="slider_text">НОУТБУКИ</span><br>
+                     ДЛЯ ОФИСА И ДОМА</b></h1>
+                     <span class="slider_text">
+                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed<br>
+                         diem nonummy nibh euismod tincidunt ut lacreet dolore magna</p>
+                     </span>
+                     <br><a class="more_info" href="#">ПОДРОБНЕЕ</a>
+                 </div>
+            </div>
         </div>
-        <div class="other_info">ПОДРОБНЕЕ</div>
-        <div class="slider2">
-            <pre>
-            <h1><span class="white_title">ВСЯ ПЕРИФЕРИЯ </span>ПО САМЫМ НИЗКИМ ЦЕНАМ</h1>
-
-            <span class="other_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-            diem nonummy nibh euismod tincidunt ut lacreet dolore magna </span>
-            <img class="laptope" src="img/cellphones-electronics-wholesale-miami-florida.png">
-            </pre>
+        <input id="slide2" type="radio" name="slider">
+       <div class="slider_2">
+            <div class="inside_slider">
+                <h1><b>ВСЯ ПЕРИФЕРИЯ</b></h1>
+                <h2><b>ПО САМЫМ НИЗКИМ ЦЕНАМ</b></h2>
+                <span class="slider_text">
+                         <p>
+                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                         diem nonummy nibh euismod tincidunt ut lacreet dolore magna
+                         </p>
+                     </span>
+                <br><a class="more_info" href="#">ПОДРОБНЕЕ</a>
+            </div>
         </div>
-        <div class="other_info">ПОДРОБНЕЕ</div>
-        <div class="slider3">
-            <pre>
-            <h1><span class="white_title">ТОЛЬКО ЭТОЙ ОСЕНЬЮ </span>СКИДКА НА ВСЕ НОУТБУКИ <span>30%</span></h1>
-
-            <span class="other_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-            diem nonummy nibh euismod tincidunt ut lacreet dolore magna
-            </span>
-            <img class="laptope" src="img/xiaomi_air_perf_pic_05_copy.png">
-            </pre>
         </div>
-        <div class="other_info">ПОДРОБНЕЕ</div>
-        <hr>
+        <input id="slide3" type="radio" name="slider">
+        <div class="slider_3">
+            <div class="inside_slider">
+                <h1><b>ТОЛЬКО ЭТОЙ ОСЕНЬЮ</b></h1>
+                <h2><b>СКИДКА НА ВСЕ НОУТБУКИ <span>30%</span></b></h2>
+                <span class="slider_text">
+                         <p>
+                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                         diem nonummy nibh euismod tincidunt ut lacreet dolore magna
+                         </p>
+                     </span>
+                <br><a class="more_info" href="#">ПОДРОБНЕЕ</a>
+            </div>
+        </div>
+        </div>
     </section>
+        <hr>
     <section>
         <div class="brands">
-            <ul>
-                <li><img src="img/comp_icon.png">Моноблоки и ноутбуки</li>
-                <li><img src="img/comp(1)_icon.png">Переферия</li>
-                <li><img src="img/comp(2)_icon.png">Комплектующие</li>
-                <li><img src="img/internet_icon.png">Роутеры</li>
-                <li><img src="img/lamp_icon.png">Настольные лампы</li>
-                <li><img src="img/game_icon.png">Игровые симуляторы</li>
+            <ul class="catalog">
+                <li><a href="#"><div><img src="img/comp_icon.png" alt="Моноблоки и ноутбуки"></div><br>МОНОБЛОКИ И НОУТБУКИ</a></li>
+                <li><a href="#"><div><img src="img/comp(1)_icon.png" alt="Периферия"></div><br>ПЕРИФЕРИЯ</a></li>
+                <li><a href="#"><div><img src="img/comp(2)_icon.png" alt="Комплектующие"></div><br>КОМПЛЕКТУЮЩИЕ</a></li>
+                <li><a href="#"><div><img src="img/internet_icon.png" alt="Роутеры"></div><br>РОУТЕРЫ</a></li>
+                <li><a href="#"><div><img src="img/lamp_icon.png" alt="Настольные лампы"></div><br>НАСТОЛЬНЫЕ ЛАМПЫ</a></li>
+                <li><a href="#"><div><img src="img/game_icon.png" alt="Игровые симуляторы"></div><br>ИГРОВЫЕ СИМУЛЯТОРЫ</a></li>
             </ul>
         </div>
     </section>
+    <hr>
     <section>
         <div><a href="#">Доставка</a></div>
         <div><a href="#">Гарантии</a></div>
@@ -135,6 +174,7 @@
             <img src="img/img-Kurier.png">
         </div>
     </section>
+    <hr>
     <section class="brands">
         <ul>
             <li><img src="img/schneiser.png"></li>
@@ -160,7 +200,18 @@
             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
         </ul>
 
-        <h3>Напишите нам</h3>
+        <div class="write_us"><div class="yel_block"><a href="#">Напишите нам</a></div><div></div>
+           <!--<div>
+                <ul>
+                    <li><p>Ваше имя:<br>
+                        <input type="text" id="your_name" placeholder="Представьтесь, пожалуйста"><label for="your_name"></label></p></li>
+                    <li><p>Ваш e-mail:<br>
+                        <input type="text" id="your_e-mail" placeholder="Для отправки ответа"><label for="your_e-mail"></label></p></li>
+                </ul>
+               <div><p>Текст письма:<br>
+                   <input type="text" id="your_text" placeholder="В свободной форме"><label for="your_text"></label></p>
+               </div>-->
+        </div>
     </article>
     <article class="block">
 
@@ -177,11 +228,12 @@
         <div>Подписаться</div>
     </article>
 </main>
+
 <footer>
 
-    <section class="">
+    <section class="bott">
         <img src="img/MAGNO -2.png">
-        <a href="">8 800 5000 616</a><br>
+        <a href="#">8 800 5000 616</a><br>
         <p>г.Москва ул.Строителей 15
             к 1 ОФИС 456
         </p>
@@ -197,10 +249,10 @@
         <p></p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d287424.1771205895!2d37.63249499999999!3d55.749792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1504860788411" width="350" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
         <p>Все права защищены 2017</p>
-        <a href="">vk</a>
-        <a href="">f</a>
-        <a href="">twit</a>
-        <a href="">mail</a>
+        <a href="#">vk</a>
+        <a href="#">f</a>
+        <a href="#">twit</a>
+        <a href="#">mail</a>
     </section>
 </footer>
 </body>
