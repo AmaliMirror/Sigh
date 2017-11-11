@@ -432,3 +432,106 @@ input[type=radio]:checked + .slidesec{
 /*Конец Правый блок*/
 /*Конец Блок с инфой*/
 /*Конец main*/
+
+/*footer*/
+/*Верхняя часть footer*/
+footer{
+    display:flex;
+    justify-content: center;
+    background-color: #464646;
+}
+/*Левая часть footer*/
+.Footer-TopSection{
+    width:1155px;
+    height: 295px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.BottomAdd{
+    width:280px;
+    margin-top:33px;
+    color:#a6a6a6;
+}
+.logo2{
+    margin-top:10px;
+    margin-left:-20px;
+}
+.footer_phone{
+    color:white;
+    margin-top:110px;
+    margin-left:-70px;
+    font-size:20pt;
+}
+.address{
+    margin-top:30px;
+    margin-left:-30px;
+    font-size:12pt;
+}
+.BottomMainMenu{
+    display:flex;
+    flex-direction: row;
+    margin-top:90px;
+    margin-left:-70px;
+}
+.BottomMainMenu li{
+    padding-right:20px;
+}
+/*Правая часть footer*/
+.BottomMinorMenu{
+    width:500px;
+    text-align:center;
+    margin-top:30px;
+}
+.BottomMinorMenu ul{
+    padding:0;
+    width:500px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+}
+.BottomMinorMenu a{
+    color:white;
+    font-size:15pt;
+    font-weight: bold;
+}
+.map{
+    width: 480px;
+    height: 200px;
+}
+
+.Bottom p{
+    color:#8a8a8a;
+}
+/*Конец Верхняя часть footer*/
+/*Нижняя часть footer*/
+.Footer-BottomSection{
+    display:flex;
+    justify-content: center;
+    background-color: #3c3c3c;
+    margin:0 -134px 0 -134px;
+}
+.contacts{
+    height: 70px;
+    width:1155px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.contacts p{
+    color:#8a8a8a;
+    margin-left:-32px;
+    margin-top:25px;
+    font-size: 15px;
+}
+.contacts ul {
+    display: flex;
+    flex-direction:row;
+}
+.contacts ul li{
+    padding-right:5px;
+    margin-top:5px;
+}
+/*Конец Нижняя часть footer*/
+/*Конец footer*/
