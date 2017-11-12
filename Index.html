@@ -5,6 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="js/js.js"></script>
 </head>
 <body>
 
@@ -18,22 +19,22 @@
                     </li>
                     <li><a href="#" class="phone"><img src="img/tel.png"><strong> +7 900 000 00 00</strong></a></li>
                     <li><form><input class="search" type="search" id="search" placeholder="Поиск по сайту"><label for="search"></label></form></li>
-                    <li><a href="#" class="user"><img src="img/account.png"> Личный кабинет</a></li>
-                        <!--<div class="user_window">
-                            <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
-                            <form>
-                                <p>ВВЕВИДЕ ПОЖАЛУЙСТА СВОЙ ЛОГИН И ПАРОЛЬ</p>
-                                <p><input type="text" id="login" placeholder="ЛОГИН"><label for="login"></label><br>
-                                <input type="text" id="password" placeholder="ПАРОЛЬ"><label for="password"></label></p>
-                                <ul class="office">
-                                    <li><input type="radio"> ЗАПОМНИ МЕНЯ</li>
-                                    <li><a href="#"><u>Я ЗАБЫЛ ПАРОЛЬ!</u></a></li>
-                                </ul>
-                                <div class="Entry">ВОЙТИ</div>
-                            </form>
-                        </div>-->
+                    <li><a href="#" onClick="buttone()" class="user"><img src="img/account.png"> Личный кабинет</a></li>
                     <li><a href="#" class="basket"><img src="img/basket.png"> Корзина</a></li>
                 </ul>
+            </div>
+            <div id="popupWin" class="modalwin">
+                <form class="sign_up">
+                    <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+                    <p><span class="log_pass">ВВЕДИТЕ ПОЖАЛУЙСТА СВОЙ ЛОГИН И ПАРОЛЬ</span></p>
+                    <p><input type="text" id="login" class="login" placeholder="ЛОГИН"><label for="login"></label><br>
+                        <input type="text" id="password" class="password" placeholder="ПАРОЛЬ"><label for="password"></label></p>
+                    <ul class="office">
+                        <li><input type="checkbox" class="remember_me" placeholder="x"><span class="rem_me">ЗАПОМНИТЕ МЕНЯ</span></li>
+                        <li><a href="#" class="forgot_pass"><u>Я ЗАБЫЛ ПАРОЛЬ!</u></a></li>
+                    </ul>
+                    <a href="#" class="Entry">ВОЙТИ</a>
+                </form>
             </div>
             <div class="MinorMenuCase">
                 <ul class="MinorMenu">
@@ -198,7 +199,6 @@
                <div><p>Текст письма:<br>
                    <input type="text" id="your_text" placeholder="В свободной форме"><label for="your_text"></label></p>
                </div>-->
-        </div>
         <div class="MinorInfoBlock2">
             <h2>ПОЧТОВАЯ РАССЫЛКА</h2>
             <div class="yel_line2"></div>

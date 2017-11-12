@@ -133,9 +133,7 @@ a{
     width:1200px;
     height:300px;
     padding-top:70px;
-    background-image: url(../img/bbb.png);
-    background-position: 70% 50%;
-    background-repeat: no-repeat;
+    background: url(../img/bbb.png) no-repeat 70% 50%;
 }
 /*Слайд 2*/
 .slide_2{
@@ -143,9 +141,7 @@ a{
     width:1200px;
     height:385px;
     padding-top:70px;
-    background-image: url(../img/aaa.png);
-    background-position: 80% 50%;
-    background-repeat: no-repeat;
+    background: url(../img/aaa.png) no-repeat 80% 50%;
 }
 /*Слайд 3*/
 .slide_3{
@@ -153,9 +149,7 @@ a{
     width:1200px;
     height:385px;
     padding-top:70px;
-    background-image: url(../img/ccc.png);
-    background-position: 80% 20%;
-    background-repeat: no-repeat;
+    background: url(../img/ccc.png) no-repeat 80% 20%;
 }
 .slide{
     order:2;
@@ -282,25 +276,19 @@ hr{
 .slide1_sec{
     width:950px;
     height:187px;
-    background-image: url(../img/c71ddc0d7026e5e7339c09a5c0bf87bd.png);
-    background-position: 80% 20%;
-    background-repeat: no-repeat;
+    background: url(../img/c71ddc0d7026e5e7339c09a5c0bf87bd.png) no-repeat 80% 20%;
 }
 /*Слайд2*/
 .slide2_sec{
     width:950px;
     height:187px;
-    background-image: url(../img/cropped-Logo-Square.png);
-    background-position: 80% 20%;
-    background-repeat: no-repeat;
+    background: url(../img/cropped-Logo-Square.png) no-repeat 80% 20%;
 }
 /*Слайд3*/
 .slide3_sec{
     width:950px;
     height:187px;
-    background-image: url(../img/img-Kurier.png);
-    background-position: 80% 20%;
-    background-repeat: no-repeat;
+    background: url(../img/img-Kurier.png) no-repeat 80% 20%;
 }
 .slidesec{
     color:#3c3c3c;
@@ -500,10 +488,6 @@ footer{
     width: 480px;
     height: 200px;
 }
-
-.Bottom p{
-    color:#8a8a8a;
-}
 /*Конец Верхняя часть footer*/
 /*Нижняя часть footer*/
 .Footer-BottomSection{
@@ -535,3 +519,119 @@ footer{
 }
 /*Конец Нижняя часть footer*/
 /*Конец footer*/
+
+/*Окно регистрации*/
+#shadow {
+    position: fixed;
+    width:100%;
+    height:100%;
+    z-index:1;
+    background:#000;
+    opacity: 0;
+    left:0;
+    top:0;
+}
+.modalwin {
+    height: 365px;
+    width: 400px;
+    background: white;
+    top: 20%;
+    right: 0;
+    left: 0;
+    font-size: 13px;
+    margin: 0 auto;
+    z-index:2;
+    display: none;
+    position: fixed;
+    padding: 15px;
+    border: 1px solid white;
+    box-shadow: 0px 15px 87px 0px #000000;
+}
+.sign_up{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left:40px;
+}
+.modalwin h2{
+    font-weight: bold;
+    font-size: 25px;
+}
+.log_pass{
+    font-weight: bold;
+}
+.login{
+    background: url('../img/email.png') no-repeat 95% 50%;
+    border: 3px solid black;
+    width: 300px;
+    height: 40px;
+    padding-left:10px;
+}
+.password{
+    background: url('../img/par.png') no-repeat 95% 50%;
+    border: 3px solid black;
+    width: 300px;
+    height: 40px;
+    padding-left:10px;
+    margin-top: 10px;
+}
+.sign_up input::-webkit-input-placeholder {
+    color: black;
+    font-weight: bold;
+}
+.office{
+    display: flex;
+    flex-direction: row;
+}
+.remember_me{
+    width: 20px;
+    height: 20px;
+    border-color: black;
+    margin-left: -40px;
+    margin-top: -19px;
+}
+.rem_me{
+    margin-left:10px;
+    margin-top:-20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.forgot_pass{
+    color: black;
+    margin-left:37px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.Entry{
+    color:white;
+    width:315px;
+    height: 30px;
+    padding-top:14px;
+    text-align: center;
+    border:1px solid black;
+    font-size:12pt;
+    font-weight: bold;
+    background-color: black;
+    margin-top:10px;
+}
+.Entry:hover{
+    color:black;
+    background-color: white;
+    border-color:black;
+}
+.Entry:active{
+    color:#717171;
+    background-color: #959595;
+    border-color:#959595;
+}
+#shadow1{
+    position: fixed;
+    width:100%;
+    height:100%;
+    z-index:1;
+    background:#000;
+    opacity: 0;
+    left:0;
+    top:0;
+}
+/*Конец Окно регистрации*/
