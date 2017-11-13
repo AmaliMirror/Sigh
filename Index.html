@@ -28,25 +28,28 @@
                     <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
                     <p><span class="log_pass">ВВЕДИТЕ ПОЖАЛУЙСТА СВОЙ ЛОГИН И ПАРОЛЬ</span></p>
                     <p><input type="text" id="login" class="login" placeholder="ЛОГИН"><label for="login"></label><br>
-                        <input type="text" id="password" class="password" placeholder="ПАРОЛЬ"><label for="password"></label></p>
+                        <input type="password" id="password" class="password" placeholder="ПАРОЛЬ"><label for="password"></label></p>
                     <ul class="office">
-                        <li><input type="checkbox" class="remember_me" placeholder="x"><span class="rem_me">ЗАПОМНИТЕ МЕНЯ</span></li>
+                        <li><input type="checkbox" class="checkbox" id="checkbox" ><span class="remember_me">ЗАПОМНИТЕ МЕНЯ</span></li>
                         <li><a href="#" class="forgot_pass"><u>Я ЗАБЫЛ ПАРОЛЬ!</u></a></li>
                     </ul>
+                    <label for="checkbox"></label>
                     <a href="#" class="Entry">ВОЙТИ</a>
                 </form>
             </div>
             <div class="MinorMenuCase">
                 <ul class="MinorMenu">
-                    <li class="all_categories"><a href="#">ВСЕ КАТЕГОРИИ <img src="img/plus.png"></a>
-                        <!--<ul>
+                    <li class="all_categories"><a href="#" onclick="toggle(document.getElementById('sub_menu_case'))">ВСЕ КАТЕГОРИИ <img src="img/plus.png"></a>
+                        <div id="sub_menu_case" style="display:none" class="sub_menu_case">
+                        <ul class="sub_menu">
                             <li><a href="#">Роутеры</a></li>
                             <li><a href="#">Игровые симуляторы</a></li>
                             <li><a href="#">Комплектующие</a></li>
                             <li><a href="#">Периферия</a></li>
                             <li><a href="#">Настольные лампы</a></li>
                             <li><a href="#">Моноблоки и ноутбуки</a></li>
-                        </ul>-->
+                        </ul>
+                        </div>
                     </li>
                     <li><a href="#">Доставка</a></li>
                     <li><a href="#">Гарантии</a></li>
@@ -61,9 +64,9 @@
     <section class="all_sliders">
         <div class="sliders">
             <div class="levers">
-                <div><label for="slider1"> </label></div>
-                <div><label for="slider2"> </label></div>
-                <div><label for="slider3"> </label></div>
+                <div class="circle"><label id="1" for="slider1"> </label></div>
+                <div class="circle"><label id="2" for="slider2"> </label></div>
+                <div class="circle"><label id="3" for="slider3"> </label></div>
             </div>
             <input id="slider1" name="slider1" type="radio">
 
@@ -125,6 +128,7 @@
                 <label for="slide2_sec">Гарантия</label>
                 <label for="slide3_sec">Кредит</label>
             </div>
+            <div class="line"></div>
             <input id="slide1_sec" name="slide1_sec" type="radio">
             <div class="slide1_sec slidesec">
         <h2>Доставка</h2>
@@ -186,19 +190,9 @@
                 <li>proident, sunt in culpa qui officia deserunt mollit anim id est
                     laborum. Sed ut perspiciatis, unde omnis iste natus error sit</li>
             </ul>
-                <a href="#" class="write_us"><strong>НАПИШИТЕ НАМ</strong></a>
+                <a href="#" onClick="buttone2()" class="write_us"><strong>НАПИШИТЕ НАМ</strong></a>
                 <div class="bot_yel_line"></div>
         </div>
-           <!--<div>
-                <ul>
-                    <li><p>Ваше имя:<br>
-                        <input type="text" id="your_name" placeholder="Представьтесь, пожалуйста"><label for="your_name"></label></p></li>
-                    <li><p>Ваш e-mail:<br>
-                        <input type="text" id="e-mail_for_answer" placeholder="Для отправки ответа"><label for="e-mail_for_answer"></label></p></li>
-                </ul>
-               <div><p>Текст письма:<br>
-                   <input type="text" id="your_text" placeholder="В свободной форме"><label for="your_text"></label></p>
-               </div>-->
         <div class="MinorInfoBlock2">
             <h2>ПОЧТОВАЯ РАССЫЛКА</h2>
             <div class="yel_line2"></div>
@@ -212,6 +206,22 @@
             <div class="but_sub">
             <a href="#" class="subscribe"><span class="gray_text">Подписаться</span></a>
             </div>
+        </div>
+
+        <div id="popupWin2" class="modalwin2">
+            <form class="modalwin2_all">
+                <ul class="modalwin2_n_m">
+                    <li><p class="name">Ваше имя:<br>
+                        <input type="text" id="your_name" placeholder="Представьтесь, пожалуйста"><label for="your_name"></label></p></li>
+                    <li><p class="mail">Ваш e-mail:<br>
+                        <input type="text" id="e-mail_for_answer" placeholder="Для отправки ответа"><label for="e-mail_for_answer"></label></p></li>
+                </ul>
+                <div class="text_box"><p>Текст письма:<br>
+                    <textarea maxlength="1000" id="your_text" placeholder="В свободной форме"></textarea><label for="your_text"></label></p>
+                </div>
+                <a href="#"><p class="enter">ОТПРАВИТЬ</p></a>
+                <div class="popup_yel_line"></div>
+            </form>
         </div>
     </article>
 </main>

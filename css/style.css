@@ -4,6 +4,10 @@ body{
 @font-face {
     font-family:Century Gothic;
     src:url(/fonts/CENTURY.TTF);
+    src:url(/fonts/GOTHIC.TTF);
+    src:url(/fonts/GOTHICB.TTF);
+    src:url(/fonts/GOTHICBI.TTF);
+    src:url(/fonts/GOTHICI.TTF);
 }
 li{
     list-style: none;
@@ -74,9 +78,21 @@ a{
     position: relative;
     color:white;
 }
+.basket:hover{
+    color:#e9b637;
+}
+.basket:active{
+    color:#989898;
+}
 .user{
     position: relative;
     color:white;
+}
+.user:hover{
+    color:#e9b637;
+}
+.user:active{
+    color:#989898;
 }
 /*menu*/
 .MinorMenuCase {
@@ -102,12 +118,35 @@ a{
     padding-top:25px;
     padding-right: 100px;
 }
+.MinorMenu a:hover{
+    color:#e9b637;
+}
+.MinorMenu a:active{
+    color:#989898;
+}
 .MinorMenu a{
     color:#3c3c3c;
 }
 .all_categories{
     flex-grow:1;
     padding-left:20px;
+}
+/*Выпадающее меню*/
+.sub_menu_case{
+    margin-left:-160px;
+    width:1426px;
+    height: 150px;
+    background-color: #f0f0f0;
+    position: relative;
+    z-index: 1;
+}
+.sub_menu{
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+}
+.sub_menu a{
+    color: #8a8a8a;
 }
 /*Конец menu*/
 /*Конец header*/
@@ -117,13 +156,15 @@ a{
 .all_sliders{
     display:flex;
     justify-content: center;
+    position: relative;
+    z-index: 0;
 }
 .sliders{
     display: flex;
     width:1080px;
     height: 400px;
     background-color: #e9b637;
-    box-shadow: 0 0 10px #3c3c3c;
+    box-shadow: 0 5px 10px #989898;
     padding:0 0 0 100px;
     overflow: hidden;
 }
@@ -159,7 +200,13 @@ a{
     margin-bottom:40px;
 }
 .levers{
-    width: 100px;
+    width: 50px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-top: 350px;
+    justify-content: space-between;
+    margin-left: 450px;
 }
 .levers div{
     text-align: center;
@@ -167,6 +214,12 @@ a{
     height: 10px;
     border: 2px solid white;
     border-radius: 50px;
+}
+.circle{
+    background: none;
+}
+.circle:first-child{
+    background: white;
 }
 input[type=radio]:checked + .slide{
     order: 1;
@@ -211,6 +264,13 @@ hr{
     border-radius:100px;
     margin-top:30px;
 }
+.catalog div:hover{
+    background-color:#e9b637;
+}
+.catalog div:active{
+    background-color:#f9e4b9;
+    border:solid 6px #f9e4b9;
+}
 .catalog a {
     text-decoration: none;
     color:black;
@@ -247,12 +307,18 @@ hr{
     display:flex;
     overflow: hidden;
 }
+.line{
+    position: absolute;
+    height: 200px;
+    border:1px solid #959595;
+    margin-left:300px;
+}
 .levers_second{
     display:flex;
     flex-direction:column;
     justify-content: space-around;
     padding-right:50px;
-    height:190px;
+    height:200px;
 }
 .levers_second label{
     text-align:center;
@@ -276,18 +342,21 @@ hr{
 .slide1_sec{
     width:950px;
     height:187px;
+    margin-left: 50px;
     background: url(../img/c71ddc0d7026e5e7339c09a5c0bf87bd.png) no-repeat 80% 20%;
 }
 /*Слайд2*/
 .slide2_sec{
     width:950px;
     height:187px;
+    margin-left: 50px;
     background: url(../img/cropped-Logo-Square.png) no-repeat 80% 20%;
 }
 /*Слайд3*/
 .slide3_sec{
     width:950px;
     height:187px;
+    margin-left: 50px;
     background: url(../img/img-Kurier.png) no-repeat 80% 20%;
 }
 .slidesec{
@@ -298,6 +367,7 @@ hr{
 }
 .slidesec p{
     width:480px;
+    color:#959595;
 }
 .slidesec h2{
     margin-top:10px;
@@ -311,6 +381,9 @@ input[type=radio]:checked + .slidesec{
 .brands_second{
     display: flex;
     justify-content: center;
+}
+.brands_second img:hover {
+    opacity: 0.5;
 }
 .brands_second ul{
     display: flex;
@@ -393,7 +466,7 @@ input[type=radio]:checked + .slidesec{
 .info{
     width:360px;
     margin-top:10px;
-    opacity:0.12;
+    color:#515151;
     font-size:10pt;
 }
 .subscribe{
@@ -404,13 +477,18 @@ input[type=radio]:checked + .slidesec{
     text-align:center;
     font-size:18pt;
 }
-.but_sub{
-    margin-top:40px;
-}
 .subscribe:hover {
     color: #e9b637;
     background-color:white;
-    border-color:white;
+    border-color:#e9b637;
+}
+.subscribe:active{
+    color: #f9e4b9;
+    background-color:white;
+    border-color:#f9e4b9;
+}
+.but_sub{
+    margin-top:40px;
 }
 .yel_line2{
     margin:20px 0 20px 0;
@@ -545,7 +623,7 @@ footer{
     position: fixed;
     padding: 15px;
     border: 1px solid white;
-    box-shadow: 0px 15px 87px 0px #000000;
+    box-shadow: 0 15px 87px 0 black;
 }
 .sign_up{
     display: flex;
@@ -583,14 +661,17 @@ footer{
     display: flex;
     flex-direction: row;
 }
-.remember_me{
+.checkbox{
     width: 20px;
     height: 20px;
     border-color: black;
     margin-left: -40px;
     margin-top: -19px;
 }
-.rem_me{
+.checkbox + label { /*Показываем, что label кликабелен. */
+    cursor: pointer;
+}
+.remember_me{
     margin-left:10px;
     margin-top:-20px;
     font-size: 14px;
@@ -635,3 +716,93 @@ footer{
     top:0;
 }
 /*Конец Окно регистрации*/
+/*Напишите нам*/
+.modalwin2{
+    position: fixed;
+    height: 500px;
+    width: 860px;
+    background: white;
+    top: 15%;
+    right: 0;
+    left: 0;
+    font-size: 13px;
+    margin: 0 auto;
+    z-index:2;
+    display: none;
+    padding: 15px;
+    border: 1px solid white;
+    box-shadow: 0 15px 87px 0 black;
+}
+.modalwin2 p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.modalwin2_all{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+}
+.name{
+    margin-left: -100px;
+    margin-top:50px;
+}
+.mail{
+    margin-left: 50px;
+    margin-top:50px;
+}
+.modalwin2_n_m{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-left:50px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.modalwin2_n_m input{
+    width: 330px;
+    height: 39px;
+    font-size: 15px;
+    padding-left: 20px;
+    margin-top: 10px;
+    border:1px solid #f2f2f2;
+    background-color: #f2f2f2;
+}
+.modalwin2_n_m input::-webkit-input-placeholder{
+    color:#d1d1d1
+}
+.text_box{
+    margin-left: 50px;
+}
+.text_box textarea{
+    resize: none;
+    width: 730px;
+    height: 150px;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-top: 10px;
+    border:1px solid #f2f2f2;
+    background-color: #f2f2f2;
+}
+.text_box textarea::-webkit-input-placeholder{
+    color: #d1d1d1;
+}
+.enter{
+    position: relative;
+    z-index: 1;
+    margin-left: 95px;
+    margin-top: -1px;
+    color: black;
+}
+.popup_yel_line{
+    position: absolute;
+    width:190px;
+    border:4px solid #f0c52e;
+    margin-top:200px;
+    margin-left: 50px;
+    z-index: 0;
+}
+/*Конец Напишите нам*/
+/*Карта*/
+/*Конец Карта*/
