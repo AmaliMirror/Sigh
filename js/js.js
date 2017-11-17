@@ -16,13 +16,12 @@ function buttone(){
 /*Конец Окно регистарации*/
 /*Слайдер*/
 document.addEventListener("DOMContentLoaded", function () {
-    // Слайдер
-    var label1=document.querySelector('#1');
-    var label2=document.querySelector('#2');
-    var label3=document.querySelector('#3');
+    var label1=document.querySelector('#l1');
+    var label2=document.querySelector('#l2');
+    var label3=document.querySelector('#l3');
     var circle=document.querySelectorAll('.circle');
     var i=0;
-    var slideInterval = setInterval(nextSlide,5000);
+    var slideInterval = setInterval(nextSlide,3000);
     var slides=document.querySelectorAll('.slide');
     label1.addEventListener("click", function () {
         circle[0].style.background='white';
@@ -61,17 +60,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 /*Конец Слайдер*/
-
 /*Напишите нам*/
 function buttone2(){
-    var darkLayer = document.createElement('div'); // слой затемнения
-    darkLayer.id = 'shadow'; // id чтобы подхватить стиль
-    document.body.appendChild(darkLayer); // включаем затемнение
-    var modalWin = document.getElementById('popupWin2'); // находим наше "окно"
-    modalWin.style.display = 'block'; // "включаем" его
-    darkLayer.onclick = function () {  // при клике на слой затемнения все исчезнет
-        darkLayer.parentNode.removeChild(darkLayer); // удаляем затемнение
-        modalWin.style.display = 'none'; // делаем окно невидимым
+    var darkLayer = document.createElement('div');
+    darkLayer.id = 'shadow';
+    document.body.appendChild(darkLayer);
+    var modalWin = document.getElementById('popupWin2');
+    modalWin.style.display = 'block';
+    darkLayer.onclick = function () {
+        darkLayer.parentNode.removeChild(darkLayer);
+        modalWin.style.display = 'none';
         return false;};
 }
 /*Конец Напишите нам*/
